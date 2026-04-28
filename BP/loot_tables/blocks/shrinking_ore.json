@@ -1,0 +1,14 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "gaa:raw_shrinking_gem",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

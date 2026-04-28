@@ -1,0 +1,23 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Gems and Armor RP",
+    "description": "Resources for the Gems and Armor addon.",
+    "uuid": "a1a9a095-50b5-4131-8ae6-4e32f93f84ad",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 21, 0]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "fa4e2f4a-1b2d-4d29-9abb-5f963020fe05",
+      "version": [1, 0, 0]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "bee99b47-d641-48d8-8905-753f2463c0a1",
+      "version": [1, 0, 0]
+    }
+  ]
+}

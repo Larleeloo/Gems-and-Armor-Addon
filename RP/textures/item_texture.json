@@ -1,0 +1,21 @@
+{
+  "resource_pack_name": "gaa",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "raw_shrinking_gem": {
+      "textures": "textures/items/raw_shrinking_gem"
+    },
+    "shrinking_helmet": {
+      "textures": "textures/items/shrinking_helmet"
+    },
+    "shrinking_chestplate": {
+      "textures": "textures/items/shrinking_chestplate"
+    },
+    "shrinking_leggings": {
+      "textures": "textures/items/shrinking_leggings"
+    },
+    "shrinking_boots": {
+      "textures": "textures/items/shrinking_boots"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:block": {
+    "description": {
+      "identifier": "gaa:shrinking_ore",
+      "menu_category": {
+        "category": "nature",
+        "group": "minecraft:itemGroup.name.ore"
+      }
+    },
+    "components": {
+      "minecraft:geometry": "geometry.shrinking_ore",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "shrinking_ore",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 3.0
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 9
+      },
+      "minecraft:map_color": "#7e8a9c",
+      "minecraft:light_dampening": 15,
+      "minecraft:loot": "loot_tables/blocks/shrinking_ore.json"
+    }
+  }
+}

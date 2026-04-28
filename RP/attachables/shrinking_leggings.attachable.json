@@ -4,8 +4,8 @@
     "description": {
       "identifier": "gaa:shrinking_leggings",
       "materials": {
-        "default": "armor_leggings",
-        "enchanted": "armor_leggings_enchanted"
+        "default": "armor",
+        "enchanted": "armor_enchanted"
       },
       "textures": {
         "default": "textures/models/armor/shrinking_layer_2",
@@ -17,7 +17,7 @@
       "scripts": {
         "parent_setup": "variable.leg_layer_visible = 0.0;"
       },
-      "render_controllers": [ "controller.render.armor.leggings" ]
+      "render_controllers": [ "controller.render.armor" ]
     }
   }
 }

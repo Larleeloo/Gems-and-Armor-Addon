@@ -1,10 +1,13 @@
 {
-  "format_version": "1.21.40",
+  "format_version": "1.21.0",
   "minecraft:recipe_shaped": {
     "description": {
       "identifier": "gaa:shrinking_leggings"
     },
     "tags": [ "crafting_table" ],
+    "unlock": [
+      { "item": "gaa:raw_shrinking_gem" }
+    ],
     "pattern": [
       "GGG",
       "G G",

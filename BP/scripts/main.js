@@ -1,8 +1,6 @@
 import { world, system, EquipmentSlot } from "@minecraft/server";
 
 const SHRUNK_KEY = "gaa:shrunk";
-const SHRUNK_SCALE = 0.111;
-const NORMAL_SCALE = 1;
 
 const REQUIRED_ARMOR = [
   [EquipmentSlot.Head, "gaa:shrinking_helmet"],
@@ -21,18 +19,14 @@ function hasFullSet(player) {
   return true;
 }
 
-function setScale(player, scale) {
-  player.runCommand(`attribute @s minecraft:scale base set ${scale}`);
-}
-
 function shrink(player) {
-  setScale(player, SHRUNK_SCALE);
+  player.triggerEvent("gaa:shrink");
   player.setDynamicProperty(SHRUNK_KEY, true);
   player.sendMessage("§dYou shrink down to gem size!");
 }
 
 function unshrink(player) {
-  setScale(player, NORMAL_SCALE);
+  player.triggerEvent("gaa:unshrink");
   player.setDynamicProperty(SHRUNK_KEY, false);
   player.sendMessage("§dYou return to normal size.");
 }
@@ -61,7 +55,9 @@ world.afterEvents.itemUse.subscribe((ev) => {
 world.afterEvents.playerSpawn.subscribe((ev) => {
   const player = ev.player;
   if (player.getDynamicProperty(SHRUNK_KEY) === true) {
-    setScale(player, SHRUNK_SCALE);
+    player.triggerEvent("gaa:shrink");
+  } else {
+    player.triggerEvent("gaa:unshrink");
   }
 });
 

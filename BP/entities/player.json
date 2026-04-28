@@ -9,23 +9,16 @@
     },
     "component_groups": {
       "gaa:shrunk_group": {
-        "minecraft:scale": { "value": 0.111 }
-      },
-      "gaa:normal_group": {
-        "minecraft:scale": { "value": 1.0 }
+        "minecraft:scale": { "value": 0.111 },
+        "minecraft:collision_box": { "width": 0.2, "height": 0.2 }
       }
-    },
-    "components": {
-      "minecraft:scale": { "value": 1.0 }
     },
     "events": {
       "gaa:shrink": {
-        "remove": { "component_groups": [ "gaa:normal_group" ] },
         "add": { "component_groups": [ "gaa:shrunk_group" ] }
       },
       "gaa:unshrink": {
-        "remove": { "component_groups": [ "gaa:shrunk_group" ] },
-        "add": { "component_groups": [ "gaa:normal_group" ] }
+        "remove": { "component_groups": [ "gaa:shrunk_group" ] }
       }
     }
   }
